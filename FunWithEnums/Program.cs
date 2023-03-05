@@ -22,6 +22,7 @@ PrintDetails();
 var dayOfWeek = TryGetDayOfWeek();
 Console.WriteLine($"Today is: {dayOfWeek}");
 
+//Enum jako typ zwracany
 DayOfWeek TryGetDayOfWeek()
 {
     while (true)
@@ -46,6 +47,7 @@ DayOfWeek TryGetDayOfWeek()
 
 void PrintDetails()
 {
+    //array - to tablica enumów DayOfWeek[6]
     var array = Enum.GetValues(typeof(DayOfWeek));
     foreach (var item in array)
     {
